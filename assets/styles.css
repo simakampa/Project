@@ -1,0 +1,103 @@
+/* ------------------ GENERAL STYLING ------------------ */
+body {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f6f8;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #1f2c56;
+    margin-bottom: 0.5rem;
+    
+}
+
+p, li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* ------------------ SIDEBAR ------------------ */
+.sidebar {
+    background-color: #ffffff;
+    border-right: 1px solid #e0e0e0;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 16rem;
+    padding: 2rem 1rem;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    color: #1f2c56;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.sidebar .nav-link.active {
+    background-color: #1f2c56;
+    color: #ffffff !important;
+    border-radius: 4px;
+}
+
+/* ------------------ CONTENT AREA ------------------ */
+#page-content {
+    margin-left: 18rem;
+    padding: 2rem 2rem;
+}
+
+/* ------------------ CARDS ------------------ */
+.card {
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+/* ------------------ GRAPHS ------------------ */
+.graph-container {
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+/* ------------------ SLIDERS & DROPDOWNS ------------------ */
+.rc-slider, .Select-control {
+    margin-bottom: 1rem;
+}
+
+/* ------------------ BULLET POINTS ------------------ */
+ul {
+    padding-left: 1.5rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* ------------------ INSIGHTS SMALL CHARTS ------------------ */
+.insight-graph {
+    margin-bottom: 1rem;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+@media (max-width: 992px) {
+    #page-content {
+        margin-left: 0;
+        padding: 1rem;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        border-right: none;
+        padding: 1rem;
+    }
+}
